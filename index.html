@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrudCrud</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/crud.css">
+    <link rel="stylesheet" href="./assets/css/create.css">
+    <link rel="stylesheet" href="./assets/css/read.css">
+    <link rel="stylesheet" href="./assets/css/table.css">
+    <link rel="stylesheet" href="./assets/css/tablerow.css">
+    <link rel="stylesheet" href="./assets/css/modal.css">
+    <link rel="stylesheet" href="./assets/css/responsibility.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo" href="#">
+            <h1>CrudCrud</h1>
+        </div>
+        <ul class="menu">
+            <li id="home-menu">Home</li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="headline">
+            <h2>Consumindo REST API <a target="_blank" href="https://crudcrud.com/">CrudCrud</a></h2>
+        </div>
+        <div class="img-crud">
+            <img src="./assets/img/crud.png" alt="crud">
+        </div>
+    </header>
+
+    <section class="crud">
+        <div class="create">
+            <form action="#" method="POST" id="creation-form"></form>
+            <fieldset form="creation-form">
+                <legend>CREATE</legend>
+                <label for="cname">Name:</label>
+                <input type="text" name="name" id="cname" placeholder="Name" form="creation-form" required>
+                <label for="csurname">Surname:</label>
+                <input type="text" name="surname" id="csurname" placeholder="Surname" form="creation-form" required>
+                <label for="cbirthday">Birthday:</label>
+                <input type="date" name="birthday" id="cbirthday" placeholder="Birthday" form="creation-form" required>
+                <label for="cemail">E-mail:</label>
+                <input type="email" name="email" id="cemail" placeholder="E-mail" form="creation-form" required>
+                <label for="cuser">User:</label>
+                <input type="text" name="user" id="cuser" placeholder="User" form="creation-form" required>
+                <label for="cpassword">Password:</label>
+                <input type="password" name="password" id="cpassword" placeholder="Password" form="creation-form"
+                    required>
+                <div class="btn-group">
+                    <button type="submit" form="creation-form">CREATE</button>
+                    <button id="generateFakePerson">GENERATE</button>
+                </div>
+            </fieldset>
+        </div>
+        <div class="read">
+            <fieldset>
+                <legend>READ - UPDATE - DELETE</legend>
+                <table class="table">
+                    <!-- <caption>
+                        <b>READ - UPDATE - DELETE</b>
+                    </caption> -->
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Surname</th>
+                            <th>Birthday</th>
+                            <th>E-mail</th>
+                            <th>User</th>
+                            <th>Password</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                <!-- show table data responsively-->
+                <div class="div-table">
+                </div>
+            </fieldset>
+        </div>
+    </section>
+
+
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="#" method="POST" id="update-form">
+                <fieldset form="update-form">
+                    <legend>UPDATE</legend>
+                    <label for="uname">Name:</label>
+                    <input type="text" name="name" id="uname" placeholder="Name" form="update-form" required>
+                    <label for="usurname">Surname:</label>
+                    <input type="text" name="surname" id="usurname" placeholder="Surname" form="update-form" required>
+                    <label for="ubirthday">Birthday:</label>
+                    <input type="date" name="birthday" id="ubirthday" placeholder="Birthday" form="update-form"
+                        required>
+                    <label for="uemail">E-mail:</label>
+                    <input type="email" name="email" id="uemail" placeholder="E-mail" form="update-form" required>
+                    <label for="uuser">User:</label>
+                    <input type="text" name="user" id="uuser" placeholder="User" form="update-form" required>
+                    <label for="upassword">Password:</label>
+                    <input type="text" name="password" id="upassword" placeholder="Password" form="update-form"
+                        required>
+                    <input type="hidden" name="_id" id="_id">
+                    <button type="submit" form="update-form">UPDATE</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/fakeGenerator.js"></script>
+    <script src="./assets/js/crud.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+.row {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 248px;    
+}
+
+.card {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    word-break: break-all;
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    font-weight: bold;
+    margin-right: 2px;
+    word-break: break-all;
+}
+
+.value {
+    word-break: break-all;
+    width: 100%;
+}
+
+
+.card .value button:first-child {
+    background-color: #180F4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 49%;
+    padding: 2%;
+    word-break: break-all;
+}
+
+.card .value button:first-child:hover {
+    outline: 2px solid #FF2978;
+}
+
+.card .value button:last-child {
+    background-color: #FF2978;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 49%;
+    padding: 2%;
+    word-break: break-all;
+}
+
+.card .value button:last-child:hover {
+    outline: 2px solid #180F4A;
+}
+
+.div-table {
+    display: none;
+}
+
+

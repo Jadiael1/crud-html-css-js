@@ -1,0 +1,11 @@
+.read {
+    display: flex;
+    flex-direction: column;
+}
+
+.read fieldset legend {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    color: #180F4A;
+    outline: 2px solid #FF2978;
+}

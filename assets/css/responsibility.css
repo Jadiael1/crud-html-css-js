@@ -1,0 +1,159 @@
+@media screen and (max-width: 845px) {
+    .table {
+        display: none;
+    }
+
+    .read {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+    }
+
+    .div-table {
+        display: flex;
+        flex-flow: column wrap;
+        word-break: break-all;
+        width: 100%;
+    }
+
+    .read fieldset {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: start;
+        overflow-y: scroll;
+        height: 478.38px;
+        margin-bottom: 4px;
+    }
+
+    .read fieldset .div-table {
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    .read fieldset legend {
+        font-family: 'Cinzel', serif;
+        font-weight: bold;
+        color: #180F4A;
+        outline: 2px solid #FF2978;
+    }
+}
+
+@media screen and (min-width: 490px) and (max-width: 509px) {
+    .create {
+        width: 100%;
+    }
+
+    .create fieldset {
+        width: 98%;
+    }
+
+    .create fieldset .btn-group {
+        display: flex;
+        flex-flow: column wrap;
+        word-break: break-all;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .read {
+        display: flex;
+        flex-flow: column wrap;
+        border-radius: 5px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .read fieldset legend {
+        font-family: 'Cinzel', serif;
+        font-weight: bold;
+        color: #180F4A;
+        outline: 2px solid #FF2978;
+    }
+
+    .read fieldset {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: start;
+        overflow-y: scroll;
+        height: 478.38px;
+        margin-bottom: 4px;
+    }
+
+    .div-table {
+        display: flex;
+        flex-flow: column wrap;
+        word-break: break-all;
+        width: 100%;
+    }
+
+    .div-table .row {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 489px) {
+    .crud {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        justify-content: space-around;
+        align-items: start;
+    }
+
+    .create {
+        width: 100%;
+    }
+
+    .create fieldset {
+        width: 98%;
+    }
+
+    .create fieldset .btn-group {
+        display: flex;
+        flex-flow: column wrap;
+        word-break: break-all;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .read {
+        display: flex;
+        flex-flow: column wrap;
+        border-radius: 5px;
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .read fieldset legend {
+        font-family: 'Cinzel', serif;
+        font-weight: bold;
+        color: #180F4A;
+        outline: 2px solid #FF2978;
+    }
+
+    .read fieldset {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: start;
+        justify-content: start;
+        overflow-y: scroll;
+        height: 478.38px;
+        margin-bottom: 4px;
+    }
+
+    .div-table {
+        display: flex;
+        flex-flow: column wrap;
+        word-break: break-all;
+        width: 100%;
+    }
+
+    .div-table .row {
+        width: 100%;
+    }
+
+}

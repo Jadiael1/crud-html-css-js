@@ -1,0 +1,91 @@
+.create {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.create fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.crud .create fieldset legend {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    color: #180F4A;
+    outline: 2px solid #FF2978;
+}
+
+.crud .create fieldset label {
+    font-family: 'Cinzel', serif;
+    display: block;
+}
+
+.crud .create fieldset {
+    border: 0.8px solid #180F4A;
+}
+
+.crud .create fieldset input {
+    height: 31px;
+    margin-bottom: 15px;
+    border: 2px solid #180F4A;
+    caret-color: #FF2978;
+    width: calc(100% - 10px);
+}
+
+.crud .create fieldset input:focus {
+    outline: none;
+    border-color: transparent;
+    border-bottom: 2px solid #180F4A;
+}
+
+.crud .create fieldset input:not(focus) {
+    outline: none;
+    border-color: transparent;
+    border-bottom: 2px solid #180F4A;
+}
+
+.crud .create fieldset input:not(:placeholder-shown) {
+    border: 2px solid #22bb33;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+}
+
+.crud .create fieldset .btn-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.crud .create fieldset .btn-group button:nth-child(1) {
+    background-color: #180F4A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 49%;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    padding: 4%;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.crud .create fieldset .btn-group button:nth-child(1):hover {
+    outline: 2px solid #FF2978;
+}
+
+.crud .create fieldset .btn-group button:nth-child(2) {
+    background-color: #FF2978;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 49%;
+    padding: 4%;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.crud .create fieldset .btn-group button:nth-child(2):hover {
+    outline: 2px solid #180F4A;
+}
