@@ -10,7 +10,7 @@ Este é um projeto simples que implementa um crud de usuarios.
 
 ## Sobre o Projeto
 
-O projeto é uma aplicação web para gerenciamento de usuários. Ele permite criar, visualizar, atualizar e excluir usuários usando a API do CrudCrud (https://crudcrud.com/). Os dados aleatórios para preencher o formulário de criação de usuário foram gerados usando o serviço Fake Name Generator (https://www.fakenamegenerator.com/).
+O projeto é uma aplicação web para gerenciamento de usuários. Ele permite criar, visualizar, atualizar e excluir usuários usando a API do ([CrudCrud](https://crudcrud.com/)). Os dados aleatórios para preencher o formulário de criação de usuário são gerados usando o serviço ([Fake Name Generator](https://www.fakenamegenerator.com/)).
 
 ## Funcionalidades
 
@@ -20,9 +20,18 @@ O projeto é uma aplicação web para gerenciamento de usuários. Ele permite cr
 - **Exclusão de Usuário:** Remove um usuário do sistema.
 
 ## Como Executar o Projeto
+#### Acesso temporário ao servidor de demonstração do CORS Anywhere
 
-1. Clone este repositório: `git clone https://github.com/Jadiael1/crud-html-css-js`
-2. Abra o arquivo `index.html` no seu navegador.
+Para acessar a API do CrudCrud de um servidor local, você precisa acessar o serviço CORS Anywhere para obter acesso temporário. Siga as etapas abaixo:
+
+1. Acesse [CORS Anywhere Demo](https://cors-anywhere.herokuapp.com/corsdemo).
+2. Clique no botão `Request temporary access to the demo server`.
+3. Você receberá uma mensagem informando que você foi temporariamente adicionado à lista de permissões.
+#### Clone o projeto
+4. Clone este repositório: `git clone https://github.com/Jadiael1/crud-html-css-js`
+5. Abra o arquivo `index.html` no seu navegador.
+
+Para acessar a versão em produção do sistema, vá para [Crud-Html-Css-Js.Leaidaj.host](https://crud-html-css-js.leaidaj.host) e teste as funcionalidades disponíveis.
 
 ## Estrutura do Projeto
 
