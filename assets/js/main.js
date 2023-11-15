@@ -218,7 +218,6 @@ window.onload = async () => {
             // refresh in div-table
             document.querySelectorAll(".div-table>.row").forEach(el => {
                 if (el.querySelector(".value>button:last-child").getAttribute("uid") == userObj._id) {
-                    console.log("asdasd");
                     el.querySelectorAll(".value")[0].textContent = isUpdated.data.name;
                     el.querySelectorAll(".value")[1].textContent = isUpdated.data.surname;
                     el.querySelectorAll(".value")[2].textContent = isUpdated.data.birthday;
