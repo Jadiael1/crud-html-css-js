@@ -31,7 +31,7 @@ Para acessar a API do CrudCrud de um servidor local, você precisa acessar o ser
 4. Clone este repositório: `git clone https://github.com/Jadiael1/crud-html-css-js`
 5. Abra o arquivo `index.html` no seu navegador.
 
-Para acessar a versão em produção do sistema, vá para [Crud-Html-Css-Js.Leaidaj.host](https://crud-html-css-js.leaidaj.host) e teste as funcionalidades disponíveis.
+Para acessar a versão em produção do sistema, tambem deve requisitar acesso temporario no [CORS Anywhere Demo](https://cors-anywhere.herokuapp.com/corsdemo). Tendo o devido acesso vá para [Crud-Html-Css-Js.Leaidaj.host](https://crud-html-css-js.leaidaj.host) e teste as funcionalidades disponíveis.
 
 ## Estrutura do Projeto
 
@@ -41,7 +41,7 @@ Para acessar a versão em produção do sistema, vá para [Crud-Html-Css-Js.Leai
 
 ## Contribuição
 
-Este projeto foi desenvolvido apenas por @jadiael1, mas pull requests são bem-vindos. Sinta-se à vontade para colaborar, fazer sugestões ou reportar problemas.
+Este projeto foi desenvolvido apenas por [@jadiael1](https://github.com/Jadiael1), mas pull requests são bem-vindos. Sinta-se à vontade para colaborar, fazer sugestões ou reportar problemas.
 
 ## Licença
 
