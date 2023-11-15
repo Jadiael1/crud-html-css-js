@@ -87,15 +87,19 @@ window.onload = async () => {
     // get users
     const tableUsers = document.querySelector(".table tbody");
     const divTable = document.querySelector(".div-table");
-    try {
-        const users = await getUsers();
-        const tableRaw = users.map(user => `<tr><td>${user.name}</td><td>${user.surname}</td><td>${user.birthday}</td><td>${user.email}</td><td>${user.user}</td><td>${user.password}</td><td><button id="openModal" location="table">Editar</button><button uid="${user._id}" location="table">Deletar</button></td></tr>`).join("");
-        tableUsers.innerHTML = `${tableRaw}`;
-        const divTableRaw = users.map(user => `<div class="row"><div class="card"><div class="title">Name:</div><div class="value">${user.name}</div></div><div class="card"><div class="title">Surname:</div><div class="value">${user.surname}</div></div><div class="card"><div class="title">Birtdday:</div><div class="value">${user.birthday}</div></div><div class="card"><div class="title">E-mail:</div><div class="value">${user.email}</div></div><div class="card"><div class="title">User:</div><div class="value">${user.user}</div></div><div class="card"><div class="title">Password:</div><div class="value">${user.password}</div></div><div class="card"><div class="title">Actions: </div><div class="value"><button id="openModal" location="div-table">Editar</button><button uid="${user._id}" location="div-table">Deletar</button></div></div></div>`).join("");
-        divTable.innerHTML = `${divTableRaw}`;
-    } catch (error) {
+    const endpoint = sessionStorage.getItem("endpoint");
+    if (typeof endpoint !== 'undefined' && endpoint !== null && endpoint.length > 0) {
+        try {
+            const users = await getUsers();
+            const tableRaw = users.map(user => `<tr><td>${user.name}</td><td>${user.surname}</td><td>${user.birthday}</td><td>${user.email}</td><td>${user.user}</td><td>${user.password}</td><td><button id="openModal" location="table">Editar</button><button uid="${user._id}" location="table">Deletar</button></td></tr>`).join("");
+            tableUsers.innerHTML = `${tableRaw}`;
+            const divTableRaw = users.map(user => `<div class="row"><div class="card"><div class="title">Name:</div><div class="value">${user.name}</div></div><div class="card"><div class="title">Surname:</div><div class="value">${user.surname}</div></div><div class="card"><div class="title">Birtdday:</div><div class="value">${user.birthday}</div></div><div class="card"><div class="title">E-mail:</div><div class="value">${user.email}</div></div><div class="card"><div class="title">User:</div><div class="value">${user.user}</div></div><div class="card"><div class="title">Password:</div><div class="value">${user.password}</div></div><div class="card"><div class="title">Actions: </div><div class="value"><button id="openModal" location="div-table">Editar</button><button uid="${user._id}" location="div-table">Deletar</button></div></div></div>`).join("");
+            divTable.innerHTML = `${divTableRaw}`;
+        } catch (error) {
+            alert("Erro ao recuperar dados de usuarios.");
+        }
+    } else {
         await detectEndpoint(true);
-        alert("Erro ao recuperar dados de usuarios.");
     }
 
     // delete user by ID
