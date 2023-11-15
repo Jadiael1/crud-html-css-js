@@ -1,12 +1,32 @@
-@media screen and (max-width: 845px) {
+@media screen and (max-width: 903px) {
     .table {
         display: none;
+    }
+
+    .crud {
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        justify-content: space-around;
+    }
+    .create {
+        width: 40%;
+    }
+
+    .create fieldset {
+        width: 100%;
     }
 
     .read {
         display: flex;
         flex-direction: column;
         border-radius: 5px;
+        width: 40%;
+        height: 488.88px;
+    }
+
+    .read fieldset .div-table .row {
+        width: 100%;
     }
 
     .div-table {
@@ -22,7 +42,7 @@
         align-items: start;
         justify-content: start;
         overflow-y: scroll;
-        height: 478.38px;
+        height: 488.88px;
         margin-bottom: 4px;
     }
 
@@ -156,4 +176,12 @@
         width: 100%;
     }
 
+}
+
+@media screen and (min-width: 904px) and (max-width: 1164px) {
+    .create fieldset {
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 70%;
+    }
 }

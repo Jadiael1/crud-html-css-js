@@ -29,35 +29,7 @@ body {
 .logo h1 {
     font-family: 'Cinzel', serif;
     color: #180F4A;
-    font-size: 34px;
-    word-break: break-all;
-}
-
-.menu {
-    list-style: none;
-    flex: 70%;
-    /* border: 1px solid green; */
-    text-align: right;
-    padding: 20px;
-    word-break: break-all;
-}
-
-.menu li {
-    display: inline-block;
-    /* margin: 5px; */
-    font-size: 20px;
-    padding: 20px 20px;
-    color: #180F4A;
-    cursor: pointer;
-}
-
-#home-menu {
-    margin-right: 15%;
-}
-
-.menu li:hover {
-    color: #FF2978;
-    border-top: 4px solid #FF2978;
+    font-size: calc(1vw + 2vh);
 }
 
 .header {
@@ -69,8 +41,6 @@ body {
     padding-top: 100px;
     margin-bottom: 20px;
 }
-
-
 
 .img-crud {
     max-width: 90%;
