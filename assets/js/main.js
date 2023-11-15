@@ -45,7 +45,7 @@ window.onload = async () => {
             const divTable = document.querySelector(".div-table");
             const newDiv = document.createElement("div");
             newDiv.classList.add("row");
-            const divTableRaw = `<div class="card"><div class="title">Name:</div><div class="value">${userObj.name}</div></div><div class="card"><div class="title">Surname:</div><div class="value">${userObj.surname}</div></div><div class="card"><div class="title">Birtdday:</div><div class="value">${userObj.birthday}</div></div><div class="card"><div class="title">E-mail:</div><div class="value">${userObj.email}</div></div><div class="card"><div class="title">User:</div><div class="value">${userObj.user}</div></div><div class="card"><div class="title">Password:</div><div class="value">${userObj.password}</div></div><div class="card"><div class="title">Actions: </div><div class="value"><button id="openModal" location="div-table">Editar</button><button uid="${isCreated.data._id} location="div-table">Deletar</button></div></div>`;
+            const divTableRaw = `<div class="card"><div class="title">Name:</div><div class="value">${userObj.name}</div></div><div class="card"><div class="title">Surname:</div><div class="value">${userObj.surname}</div></div><div class="card"><div class="title">Birtdday:</div><div class="value">${userObj.birthday}</div></div><div class="card"><div class="title">E-mail:</div><div class="value">${userObj.email}</div></div><div class="card"><div class="title">User:</div><div class="value">${userObj.user}</div></div><div class="card"><div class="title">Password:</div><div class="value">${userObj.password}</div></div><div class="card"><div class="title">Actions: </div><div class="value"><button id="openModal" location="div-table">Editar</button><button uid="${isCreated.data._id}" location="div-table">Deletar</button></div></div>`;
             newDiv.innerHTML = divTableRaw;
             divTable.appendChild(newDiv);
 
@@ -218,6 +218,7 @@ window.onload = async () => {
             // refresh in div-table
             document.querySelectorAll(".div-table>.row").forEach(el => {
                 if (el.querySelector(".value>button:last-child").getAttribute("uid") == userObj._id) {
+                    console.log("asdasd");
                     el.querySelectorAll(".value")[0].textContent = isUpdated.data.name;
                     el.querySelectorAll(".value")[1].textContent = isUpdated.data.surname;
                     el.querySelectorAll(".value")[2].textContent = isUpdated.data.birthday;
